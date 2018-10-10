@@ -4,7 +4,7 @@
 }
 
 body{
-    height: 300vh;
+    height: 100vh;
     font-family: Orkney;
     font-weight: 700;
     font-size: 2em;
@@ -20,9 +20,9 @@ header{
 nav{
     background-color: #00b4cd;
     height: 100vh;
-    width: 30vw;
-    transform: translateX(30vw);
-    transition: transform 700ms ease-out;
+    min-width: 25vw;
+    transform: translateX(25vw);
+    transition: transform 600ms ease-out;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -34,7 +34,7 @@ nav.visible{
 }
 
 .home, .about, .projects{
-    transform: translateX(30vw);
+    transform: translateX(25vw);
     cursor: pointer;
     transition: 0s text-shadow;
 }
