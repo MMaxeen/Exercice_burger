@@ -100,3 +100,9 @@ nav.visible .about{
     color: white;
     text-shadow: 2px 3px rgba(80, 80, 80, 0.8);
 }
+
+::selection{
+    color: #00b4cd;
+    background-color: white;
+}
+
