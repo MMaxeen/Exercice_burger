@@ -36,22 +36,21 @@ nav.visible{
 .home, .about, .projects{
     transform: translateX(25vw);
     cursor: pointer;
-    transition: 0s text-shadow;
+    transition: transform 400ms ease-out;
 }
 
 nav.visible .home{
     transform: translateX(0);
-    transition: ease 0.6s;
 }
 
 nav.visible .projects{
     transform: translateX(0);
-    transition: ease 1s;
+    transition-delay: 0.4s;
 }
 
 nav.visible .about{
     transform: translateX(0);
-    transition: ease 1.4s;
+    transition-delay: 0.6s;
 }
 
 .menu{
@@ -69,7 +68,7 @@ nav.visible .about{
 	width: 30px;
 	height: 4px;
 	background-color: #00b4cd;
-    transition: all 600ms ease-in-out;
+    transition: 600ms ease-in-out;
     margin: 8px 0;
 }
 
@@ -78,31 +77,31 @@ nav.visible .about{
 }
 
 .menu.active .line.top{
-	width: 30px;
-	transform: translateX(0px) translateY(4px) rotate(45deg);
+	transform: translateX(0px) translateY(8px) rotate(45deg);
 }
 .menu.active .line.bottom{
-	width: 30px;
-	transform: translateX(0px) translateY(-8px) rotate(-45deg);
+	transform: translateX(0px) translateY(-4px) rotate(-45deg);
 }
 
-.home:hover{
+nav.visible .home:hover{
     color: white;
     text-shadow: 2px 3px rgba(80, 80, 80, 0.8);
+    transition: text-shadow 0.6s ease-in;
 }
 
-.projects:hover{
+nav.visible .projects:hover{
     color: white;
     text-shadow: 2px 3px rgba(80, 80, 80, 0.8);
+    transition: text-shadow 0.6s ease-in;
 }
 
-.about:hover{
+nav.visible .about:hover{
     color: white;
     text-shadow: 2px 3px rgba(80, 80, 80, 0.8);
+    transition: text-shadow 0.6s ease-in;
 }
 
 ::selection{
     color: #00b4cd;
     background-color: white;
 }
-
